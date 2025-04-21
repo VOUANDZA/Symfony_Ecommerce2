@@ -15,7 +15,7 @@
   <h1>{{product.name}}</h1>
     <span class="d-block mb-3">{{product.PriceWt|price}}</span>
     {{product.description|raw}}
-    <a href="#" class="btn btn-success">Ajouter au panier</a>
+    <a href="{{path('app_cart_add', {'id':product.id})}}" class="btn btn-success">Ajouter au panier</a>
  </div>
 
 
